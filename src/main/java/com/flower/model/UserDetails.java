@@ -1,5 +1,8 @@
 package com.flower.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.springframework.stereotype.Component;
+
 public class UserDetails {
     private int userId;
 
@@ -12,7 +15,6 @@ public class UserDetails {
     public UserDetails(){
     }
     public UserDetails(int userId,int id,String title,String body){
-
         this.userId=userId;
         this.id=id;
         this.title=title;
